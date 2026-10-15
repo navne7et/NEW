@@ -1,806 +1,875 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For Bulbul ❤️</title>
+    <title>For Bulbul ❤️</title>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #120b12;
-    color: white;
-    font-family: "Playfair Display", serif;
-    overflow-x: hidden;
-}
-
-/* HERO */
-
-.hero {
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(10,5,12,0.55),
-            rgba(20,8,20,0.35),
-            rgba(10,5,12,0.72)
-        ),
-        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=90");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        transparent 70%,
-        #120b12 100%
-    );
-    pointer-events: none;
-}
-
-/* NAVBAR */
-
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 25px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-}
-
-.logo {
-    font-family: "Caveat", cursive;
-    font-size: 25px;
-    color: #ffd2e1;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 30px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #ff8fb5;
-}
-
-/* HERO CONTENT */
-
-.hero-content {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 120px 7% 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-}
-
-.text {
-    max-width: 600px;
-}
-
-.small-title {
-    font-family: "Caveat", cursive;
-    font-size: 28px;
-    color: #ffd2e1;
-    margin-bottom: 5px;
-}
-
-.name {
-    font-family: "Caveat", cursive;
-    font-size: clamp(80px, 13vw, 150px);
-    line-height: 0.8;
-    color: #ff9fc0;
-    text-shadow: 0 0 30px rgba(255,120,170,0.4);
-}
-
-.birthday {
-    margin-top: 30px;
-    font-size: clamp(25px, 4vw, 42px);
-}
-
-.birthday span {
-    color: #ff9fc0;
-}
-
-.subtitle {
-    margin-top: 15px;
-    color: #f6dbe5;
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-/* COUNTDOWN */
-
-.countdown-box {
-    margin-top: 30px;
-    width: fit-content;
-    padding: 22px 35px;
-    border: 1px solid rgba(255,160,195,0.55);
-    border-radius: 22px;
-    background: rgba(20,8,18,0.55);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 0 35px rgba(255,80,150,0.15);
-}
-
-.countdown-title {
-    font-size: 14px;
-    color: #f4c7d7;
-    margin-bottom: 5px;
-}
-
-.days {
-    font-size: 55px;
-    color: #ff9fc0;
-    font-weight: bold;
-}
-
-.days-label {
-    font-size: 13px;
-    color: #f4c7d7;
-}
-
-/* BIKE */
-
-.bike-area {
-    width: 48%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bike {
-    width: 100%;
-    max-width: 570px;
-    filter: drop-shadow(0 25px 25px rgba(0,0,0,0.7));
-    transform: rotate(-2deg);
-    animation: bikeFloat 4s ease-in-out infinite;
-    border-radius: 20px;
-}
-
-@keyframes bikeFloat {
-    0%,100% {
-        transform: translateY(0) rotate(-2deg);
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    50% {
-        transform: translateY(-12px) rotate(-1deg);
+    html {
+        scroll-behavior: smooth;
     }
-}
 
-/* MESSAGE */
+    body {
+        background: #120b12;
+        color: white;
+        font-family: "Playfair Display", serif;
+        overflow-x: hidden;
+    }
 
-.message-section {
-    min-height: 90vh;
-    padding: 110px 8%;
-    background:
-        radial-gradient(
-            circle at top,
-            #39202e,
-            #120b12 60%
+    /* HERO */
+
+    .hero {
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(10,5,12,0.55),
+                rgba(20,8,20,0.35),
+                rgba(10,5,12,0.72)
+            ),
+            url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=90");
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to bottom,
+            transparent 70%,
+            #120b12 100%
         );
-    position: relative;
-}
-
-.section-title {
-    text-align: center;
-    font-family: "Caveat", cursive;
-    font-size: 52px;
-    color: #ff9fc0;
-    margin-bottom: 60px;
-}
-
-.message-card {
-    max-width: 850px;
-    margin: auto;
-    padding: 55px;
-    border-radius: 30px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,170,200,0.2);
-    backdrop-filter: blur(15px);
-    text-align: center;
-    box-shadow: 0 25px 80px rgba(0,0,0,0.3);
-}
-
-.message-card p {
-    font-family: "Caveat", cursive;
-    font-size: 28px;
-    line-height: 1.6;
-    color: #ffe7ef;
-}
-
-.highlight {
-    color: #ff9fc0;
-    font-size: 34px;
-}
-
-.from {
-    margin-top: 35px;
-    font-family: "Caveat", cursive;
-    font-size: 30px;
-    color: #ff9fc0;
-}
-
-/* WISHES */
-
-.wishes {
-    padding: 100px 8%;
-    background: #0d080d;
-}
-
-.wishes-container {
-    max-width: 1000px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-}
-
-.wish {
-    padding: 35px 20px;
-    text-align: center;
-    border-radius: 22px;
-    background: linear-gradient(
-        145deg,
-        rgba(255,150,190,0.12),
-        rgba(255,255,255,0.03)
-    );
-    border: 1px solid rgba(255,150,190,0.15);
-    transition: 0.4s;
-}
-
-.wish:hover {
-    transform: translateY(-10px);
-    border-color: #ff9fc0;
-}
-
-.wish .icon {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
-
-.wish h3 {
-    color: #ffb4cb;
-    margin-bottom: 10px;
-}
-
-.wish p {
-    color: #d9bbc6;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* BUTTON */
-
-.surprise {
-    text-align: center;
-    padding: 80px 20px 120px;
-    background: #0d080d;
-}
-
-button {
-    padding: 17px 32px;
-    border-radius: 50px;
-    border: 1px solid #ff9fc0;
-    background: transparent;
-    color: #ffb4cb;
-    font-family: "Playfair Display", serif;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-button:hover {
-    background: #ff9fc0;
-    color: #160b12;
-    box-shadow: 0 0 35px rgba(255,120,170,0.5);
-}
-
-/* POPUP */
-
-.popup {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(8px);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    padding: 20px;
-}
-
-.popup-card {
-    max-width: 550px;
-    padding: 50px 35px;
-    background: #21121d;
-    border: 1px solid #ff9fc0;
-    border-radius: 30px;
-    text-align: center;
-    box-shadow: 0 0 70px rgba(255,100,160,0.25);
-    animation: popup 0.5s ease;
-}
-
-.popup-card h2 {
-    font-family: "Caveat", cursive;
-    font-size: 48px;
-    color: #ff9fc0;
-}
-
-.popup-card p {
-    margin-top: 20px;
-    font-family: "Caveat", cursive;
-    font-size: 25px;
-    line-height: 1.6;
-    color: #ffe5ed;
-}
-
-.close {
-    margin-top: 25px;
-}
-
-/* FLOATING HEARTS */
-
-.heart {
-    position: fixed;
-    bottom: -30px;
-    font-size: 20px;
-    animation: floatHeart linear forwards;
-    pointer-events: none;
-    z-index: 20;
-}
-
-@keyframes floatHeart {
-    from {
-        transform: translateY(0) scale(1);
-        opacity: 0;
+        pointer-events: none;
     }
 
-    20% {
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(-110vh) rotate(30deg) scale(1.5);
-        opacity: 0;
-    }
-}
-
-/* MOBILE */
-
-@media(max-width:800px) {
+    /* NAVBAR */
 
     nav {
-        padding: 18px 5%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
     }
 
-    nav div:last-child {
-        display: none;
+    .logo {
+        font-family: "Caveat", cursive;
+        font-size: 25px;
+        color: #ffd2e1;
     }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #ff8fb5;
+    }
+
+    /* HERO CONTENT */
 
     .hero-content {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 130px;
-    }
-
-    .bike-area {
         width: 100%;
-        margin-top: 45px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 120px 7% 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
     }
 
-    .bike {
-        max-width: 500px;
+    .text {
+        max-width: 600px;
     }
 
-    .countdown-box {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .message-card {
-        padding: 35px 20px;
-    }
-
-    .wishes-container {
-        grid-template-columns: 1fr;
+    .small-title {
+        font-family: "Caveat", cursive;
+        font-size: 28px;
+        color: #ffd2e1;
+        margin-bottom: 5px;
     }
 
     .name {
-        font-size: 90px;
+        font-family: "Caveat", cursive;
+        font-size: clamp(80px, 13vw, 150px);
+        line-height: 0.8;
+        color: #ff9fc0;
+        text-shadow: 0 0 30px rgba(255,120,170,0.4);
     }
-}
-</style>
-</head>
 
-<body>
+    .birthday {
+        margin-top: 30px;
+        font-size: clamp(25px, 4vw, 42px);
+    }
 
-<section class="hero" id="home">
+    .birthday span {
+        color: #ff9fc0;
+    }
 
-<nav>
-    <div class="logo">♡ A little surprise for you...</div>
+    .subtitle {
+        margin-top: 15px;
+        color: #f6dbe5;
+        font-size: 17px;
+        line-height: 1.8;
+    }
 
-    <div>
-        <a href="#home">Home</a>
-        <a href="#message">Message</a>
-        <a href="#wishes">For You</a>
-    </div>
-</nav>
+    /* COUNTDOWN */
 
-<div class="hero-content">
+    .countdown-box {
+        margin-top: 30px;
+        width: fit-content;
+        padding: 22px 35px;
+        border: 1px solid rgba(255,160,195,0.55);
+        border-radius: 22px;
+        background: rgba(20,8,18,0.55);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 0 35px rgba(255,80,150,0.15);
+    }
 
-    <div class="text">
+    .countdown-title {
+        font-size: 14px;
+        color: #f4c7d7;
+        margin-bottom: 5px;
+    }
 
-        <div class="small-title">
-            For My Beautiful Sister
+    .days {
+        font-size: 55px;
+        color: #ff9fc0;
+        font-weight: bold;
+    }
+
+    .days-label {
+        font-size: 13px;
+        color: #f4c7d7;
+    }
+
+    /* BIKE */
+
+    .bike-area {
+        width: 48%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bike {
+        width: 100%;
+        max-width: 570px;
+        filter: drop-shadow(0 25px 25px rgba(0,0,0,0.7));
+        transform: rotate(-2deg);
+        animation: bikeFloat 4s ease-in-out infinite;
+        border-radius: 20px;
+    }
+
+    @keyframes bikeFloat {
+        0%,100% {
+            transform: translateY(0) rotate(-2deg);
+        }
+
+        50% {
+            transform: translateY(-12px) rotate(-1deg);
+        }
+    }
+
+    /* MESSAGE */
+
+    .message-section {
+        min-height: 90vh;
+        padding: 110px 8%;
+        background:
+            radial-gradient(
+                circle at top,
+                #39202e,
+                #120b12 60%
+            );
+        position: relative;
+    }
+
+    .section-title {
+        text-align: center;
+        font-family: "Caveat", cursive;
+        font-size: 52px;
+        color: #ff9fc0;
+        margin-bottom: 60px;
+    }
+
+    .message-card {
+        max-width: 850px;
+        margin: auto;
+        padding: 55px;
+        border-radius: 30px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,170,200,0.2);
+        backdrop-filter: blur(15px);
+        text-align: center;
+        box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+    }
+
+    .message-card p {
+        font-family: "Caveat", cursive;
+        font-size: 28px;
+        line-height: 1.6;
+        color: #ffe7ef;
+    }
+
+    .highlight {
+        color: #ff9fc0;
+        font-size: 34px;
+    }
+
+    .from {
+        margin-top: 35px;
+        font-family: "Caveat", cursive;
+        font-size: 30px;
+        color: #ff9fc0;
+    }
+
+    /* WISHES */
+
+    .wishes {
+        padding: 100px 8%;
+        background: #0d080d;
+    }
+
+    .wishes-container {
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+
+    .wish {
+        padding: 35px 20px;
+        text-align: center;
+        border-radius: 22px;
+        background: linear-gradient(
+            145deg,
+            rgba(255,150,190,0.12),
+            rgba(255,255,255,0.03)
+        );
+        border: 1px solid rgba(255,150,190,0.15);
+        transition: 0.4s;
+    }
+
+    .wish:hover {
+        transform: translateY(-10px);
+        border-color: #ff9fc0;
+    }
+
+    .wish .icon {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .wish h3 {
+        color: #ffb4cb;
+        margin-bottom: 10px;
+    }
+
+    .wish p {
+        color: #d9bbc6;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* BUTTON */
+
+    .surprise {
+        text-align: center;
+        padding: 80px 20px 120px;
+        background: #0d080d;
+    }
+
+    button {
+        padding: 17px 32px;
+        border-radius: 50px;
+        border: 1px solid #ff9fc0;
+        background: transparent;
+        color: #ffb4cb;
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    button:hover {
+        background: #ff9fc0;
+        color: #160b12;
+        box-shadow: 0 0 35px rgba(255,120,170,0.5);
+    }
+
+    /* POPUP */
+
+    .popup {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(8px);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        padding: 20px;
+    }
+
+    .popup-card {
+        max-width: 550px;
+        padding: 50px 35px;
+        background: #21121d;
+        border: 1px solid #ff9fc0;
+        border-radius: 30px;
+        text-align: center;
+        box-shadow: 0 0 70px rgba(255,100,160,0.25);
+        animation: popup 0.5s ease;
+    }
+
+    .popup-card h2 {
+        font-family: "Caveat", cursive;
+        font-size: 48px;
+        color: #ff9fc0;
+    }
+
+    .popup-card p {
+        margin-top: 20px;
+        font-family: "Caveat", cursive;
+        font-size: 25px;
+        line-height: 1.6;
+        color: #ffe5ed;
+    }
+
+    .close {
+        margin-top: 25px;
+    }
+
+    /* FLOATING HEARTS */
+
+    .heart {
+        position: fixed;
+        bottom: -30px;
+        font-size: 20px;
+        animation: floatHeart linear forwards;
+        pointer-events: none;
+        z-index: 20;
+    }
+
+    @keyframes floatHeart {
+        from {
+            transform: translateY(0) scale(1);
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        to {
+            transform: translateY(-110vh) rotate(30deg) scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    /* MOBILE */
+
+    @media(max-width:800px) {
+
+        nav {
+            padding: 18px 5%;
+        }
+
+        nav div:last-child {
+            display: none;
+        }
+
+        .hero-content {
+            flex-direction: column;
+            text-align: center;
+            padding-top: 130px;
+        }
+
+        .bike-area {
+            width: 100%;
+            margin-top: 45px;
+        }
+
+        .bike {
+            max-width: 500px;
+        }
+
+        .countdown-box {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .message-card {
+            padding: 35px 20px;
+        }
+
+        .wishes-container {
+            grid-template-columns: 1fr;
+        }
+
+        .name {
+            font-size: 90px;
+        }
+    }
+    </style>
+    </head>
+
+    <body>
+
+    <section class="hero" id="home">
+
+    <nav>
+        <div class="logo">♡ A little surprise for you...</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#message">Message</a>
+            <a href="#wishes">For You</a>
         </div>
+    </nav>
 
-        <div class="name">
-            Bulbul ❤️
-        </div>
+    <div class="hero-content">
 
-        <div class="birthday">
-            🎂 Happy Birthday <span>in Advance!</span>
-        </div>
+        <div class="text">
 
-        <div class="subtitle">
-            Another year of you means another year
-            of the world being a little brighter. ✨
-        </div>
-
-        <div class="countdown-box">
-
-            <div class="countdown-title">
-                💗 DAYS REMAINING UNTIL YOUR BIRTHDAY
+            <div class="small-title">
+                For My Beautiful Sister
             </div>
 
-            <div class="days" id="days">
-                --
+            <div class="name">
+                Bulbul ❤️
             </div>
 
-            <div class="days-label">
-                days of waiting for your special day ✨
+            <div class="birthday">
+                🎂 Happy Birthday <span>in Advance!</span>
             </div>
+
+            <div class="subtitle">
+                Another year of you means another year
+                of the world being a little brighter. ✨
+            </div>
+
+            <div class="countdown-box">
+
+                <div class="countdown-title">
+                    💗 DAYS REMAINING UNTIL YOUR BIRTHDAY
+                </div>
+
+                <div class="days" id="days">
+                    --
+                </div>
+
+                <div class="days-label">
+                    days of waiting for your special day ✨
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bike-area">
+
+            <img
+            class="bike"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Jawa%20350%20black.jpg"
+            alt="Jawa Motorcycle">
 
         </div>
 
     </div>
 
-    <div class="bike-area">
+    </section>
 
-        <img
-        class="bike"
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/Jawa%20350%20black.jpg"
-        alt="Jawa Motorcycle">
+
+    <section class="message-section" id="message">
+
+    <h2 class="section-title">
+        A Little Message For You 🌷
+    </h2>
+
+    <div class="message-card">
+
+    <p>
+
+    Hey Bulbul❤️❤️
+    <br>
+<br>
+Apko pta h , is generation me, 
+where everyone can replace anyone, I could never replace you. 
+No matter what happens, there's only one you for me, and there always will be. <br>
+
+
+jab bhi kisi ko apni didi ke saath haste, khelte ya masti karte dekhta hoon na, sabse pehle aap hi aap hi aati dimag me, sbse phle kya ek aap hi to hai........<br>
+
+Aur pta hai kya.... Mere sath kuch v hota h acha bura, ya kuch v to Mera mn krta h aapse keh de bs apse............bs aisa hi sb kuch h
+<br><br>
+mujhe achha lagta hai jab aap apni tensions mujhse share karti ho. i know main sab kuch theek nahi kar sakta, but tumhe  akele sab sehne ki zaroorat nahi hai, Bulbul. kabhi bhi, kahin bhi, bas call ya text kar dena.
+<br>
+ aur kabhi aap khud se call karke apni problems batao na, toh aur achha lagega mujhe, bas ye soch ke ki chalo, aap mujhe itna apna toh samajhti ho ki apni baatein share kar sakti ho. 
+<br><br>
+Pta h aap jb aise hi call krti h nii kvi bina matlab ke, it enough to melts...
+
+Mujhe yad h Boht pehle ek bar , hm preshan baithe the aise hi, phir achanak apka call aya ticket wagera book krne k liye, phir thodi Boht bat Hui, phir mai shi ho gya call katne tk, Boht pehle ki baat h, syd delhi ki hi...
+
+It's just a random call bulbul.....🫠<br>
+
+<br><br>
+I'm not good at expressing emotions, but I still try to tell u little little, from reels  post ,kvi kuch bol kvi likh k, to wo sb aise hi nii hota, if I am telling u it means, I really meant it from the bottom of my heart ❤️.
+<br>
+agr mai kuch bol pata hu to wo v sirf apse hi.<br>
+If I annoy you, it means u're important to me, way more important than you think. And I know, mai is bat ko apki kvi smjha nii paunga, but koi ni aap smjhdar h.
+ <br><br>
+U know, I love the version of u , when I'm with u and sometime u behave like a kid around me, when u're very happy and u share with me , it makes me very happy. 
+<br><br>
+Jaise , us din apka dress aaya savana, aap kitni khus thi wo dikh rha tha, phir aapne bheja mujhse pucha ki kaisi lg rhi hu, so it's the little things that makes happy, comforting.
+<br><br>
+Phir aap jaise khus thi Chakrata me, wo I can feel it how happy u're and how happy it makes me.
+Ye sb chize unexplainable hhhhh.....
+<br><br>
+Isiliye kvi kvi bs yhi chahata  hoon, ki agr aap mere sath h to bs mere sath hi rhe us tym, ek to aise hi tym Boht km milta hai,
+<br><br>
+Aap puchti h na gussa nii ata kvi tuhe, <br><br>
+Ap kvi gussa dila hi nii payengi kitna v koshish kr le, hn hurt kr skti h 😂😂<br>
+<br>
+Kvi kvi choti choti bat pr may be hurt, but it's okay.
+<br>
+Aur aisi Boht si batein hai, yha kehna mushkil hai,
+<br>
+Aur v Boht kuch rh gya, Boht se moments Boht si batein h...... Thoda jyada ho gya itna hi......rokte h ab.
+<br>
+Inhi sb karno se,,, apse mil k Jana Boht mushkil hota, it's very hard to me to control myself at that moment......kvi aap jane k bad dekh lengi hal to aise hi ruk jayengi😂😂 .
+<br>
+Khair koi nii ek bond hona chaiye aisa.
+<br><br>
+And yes,  You're my one of reason to smile.
+<br>
+Last m bs yhi ki,<br><br> 
+
+Yes, You matters a lot for me , a lot
+For me , You're my one and only piece, and no one could ever be you. 
+<br><br>
+Love u bro!❤️🫂
+<br><br>
+A very Happy Birthday very happy, bs aap smjh jao
+❤️❤️🥹🥹🥹🥹
+<br><br>
+Note: 
+
+thoda sensitive sa note hai, toh padhke hasna mat please 😭❤️ mujhe khud nahi pata maine kya likha hai aur kaise likha hai, bas jo feel hua woh likh diya. 🫂
+
+****Pta nii kya kya likh diye, maine khud dubara v nii pdha , Boht himmat krke likha gya hai, bhool chook maaf Krna *****😂😂
+<br><br>
+
+Aur haa, maaf Krna kuch bhejwa nii paya aaj,
+But I promise jb v aaunga kuch lekr aaunga tumhare liye..
+Sorryyy<br>
+
+    <br><br>
+
+    <span class="highlight">
+    You are one of those special people.
+    </span>
+
+    <br><br>
+
+    Never forget how precious you are,
+    <br>
+    never stop believing in yourself,
+    <br>
+    and most importantly...
+
+    <br>
+
+    <strong>
+    never stop smiling. ❤️
+    </strong>
+
+    <br><br>
+
+    May your birthday bring you
+    <br>
+    happiness, laughter, success,
+    <br>
+    beautiful memories and everything
+    <br>
+    your heart wishes for.
+
+    </p>
+
+    <div class="from">
+        With lots of love,<br>
+        — From Navneet 💕
+    </div>
 
     </div>
 
-</div>
-
-</section>
+    </section>
 
 
-<section class="message-section" id="message">
+    <section class="wishes" id="wishes">
 
-<h2 class="section-title">
-    A Little Message For You 🌷
-</h2>
+    <h2 class="section-title">
+        For The Year Ahead ✨
+    </h2>
 
-<div class="message-card">
+    <div class="wishes-container">
 
-<p>
+    <div class="wish">
+        <div class="icon">🌸</div>
+        <h3>Stay Happy</h3>
+        <p>
+            Keep finding little reasons
+            to smile every single day.
+        </p>
+    </div>
 
-“Some people make ordinary days beautiful,
-<br>
-and some people make life itself brighter.
+    <div class="wish">
+        <div class="icon">❤️</div>
+        <h3>Stay Kind</h3>
+        <p>
+            Never lose the beautiful heart
+            that makes you who you are.
+        </p>
+    </div>
 
-<br><br>
+    <div class="wish">
+        <div class="icon">✨</div>
+        <h3>Keep Shining</h3>
+        <p>
+            Believe in yourself and keep
+            chasing everything you dream of.
+        </p>
+    </div>
 
-<span class="highlight">
-You are one of those special people.
-</span>
+    </div>
 
-<br><br>
-
-Never forget how precious you are,
-<br>
-never stop believing in yourself,
-<br>
-and most importantly...
-
-<br>
-
-<strong>
-never stop smiling. ❤️
-</strong>
-
-<br><br>
-
-May your birthday bring you
-<br>
-happiness, laughter, success,
-<br>
-beautiful memories and everything
-<br>
-your heart wishes for.
-
-</p>
-
-<div class="from">
-    With lots of love,<br>
-    — From Navneet 💕
-</div>
-
-</div>
-
-</section>
+    </section>
 
 
-<section class="wishes" id="wishes">
+    <section class="surprise">
 
-<h2 class="section-title">
-    For The Year Ahead ✨
-</h2>
+    <h2 class="section-title">
+        One Last Thing... 💌
+    </h2>
 
-<div class="wishes-container">
+    <button onclick="openSurprise()">
+        💗 Open Your Special Message
+    </button>
 
-<div class="wish">
-    <div class="icon">🌸</div>
-    <h3>Stay Happy</h3>
+    </section>
+
+
+    <div class="popup" id="popup">
+
+    <div class="popup-card">
+
+    <h2>
+        Bulbul ❤️
+    </h2>
+
     <p>
-        Keep finding little reasons
-        to smile every single day.
+    I don't need a special occasion
+    to tell you this...
+
+    <br><br>
+
+    You're an amazing sister,
+    and I hope life gives you
+    countless reasons to smile.
+
+    <br><br>
+
+    Your birthday is coming...
+    but you deserve happiness
+    every single day. 🌸
+
+    <br><br>
+
+    Keep smiling! ❤️
+
     </p>
-</div>
 
-<div class="wish">
-    <div class="icon">❤️</div>
-    <h3>Stay Kind</h3>
-    <p>
-        Never lose the beautiful heart
-        that makes you who you are.
-    </p>
-</div>
+    <button class="close" onclick="closeSurprise()">
+        Close 💕
+    </button>
 
-<div class="wish">
-    <div class="icon">✨</div>
-    <h3>Keep Shining</h3>
-    <p>
-        Believe in yourself and keep
-        chasing everything you dream of.
-    </p>
-</div>
+    </div>
 
-</div>
-
-</section>
+    </div>
 
 
-<section class="surprise">
+    <script>
 
-<h2 class="section-title">
-    One Last Thing... 💌
-</h2>
+    /* BIRTHDAY COUNTDOWN */
 
-<button onclick="openSurprise()">
-    💗 Open Your Special Message
-</button>
+    function updateCountdown() {
 
-</section>
+        const today = new Date();
 
-
-<div class="popup" id="popup">
-
-<div class="popup-card">
-
-<h2>
-    Bulbul ❤️
-</h2>
-
-<p>
-I don't need a special occasion
-to tell you this...
-
-<br><br>
-
-You're an amazing sister,
-and I hope life gives you
-countless reasons to smile.
-
-<br><br>
-
-Your birthday is coming...
-but you deserve happiness
-every single day. 🌸
-
-<br><br>
-
-Keep smiling! ❤️
-
-</p>
-
-<button class="close" onclick="closeSurprise()">
-    Close 💕
-</button>
-
-</div>
-
-</div>
-
-
-<script>
-
-/* BIRTHDAY COUNTDOWN */
-
-function updateCountdown() {
-
-    const today = new Date();
-
-    let birthday = new Date(
-        today.getFullYear(),
-        9,
-        15
-    );
-
-    if (today > birthday) {
-
-        birthday = new Date(
-            today.getFullYear() + 1,
+        let birthday = new Date(
+            today.getFullYear(),
             9,
             15
         );
 
-    }
+        if (today > birthday) {
 
-    const difference =
-        birthday.getTime() - today.getTime();
+            birthday = new Date(
+                today.getFullYear() + 1,
+                9,
+                15
+            );
 
-    const days =
-        Math.ceil(
-            difference / (1000 * 60 * 60 * 24)
-        );
+        }
 
-    document.getElementById("days").textContent =
-        days;
+        const difference =
+            birthday.getTime() - today.getTime();
 
-}
+        const days =
+            Math.ceil(
+                difference / (1000 * 60 * 60 * 24)
+            );
 
-updateCountdown();
-
-setInterval(updateCountdown, 60000);
-
-
-/* SPECIAL MESSAGE */
-
-function openSurprise() {
-
-    document.getElementById("popup").style.display =
-        "flex";
-
-    createHearts(25);
-}
-
-function closeSurprise() {
-
-    document.getElementById("popup").style.display =
-        "none";
-
-}
-
-
-/* FLOATING HEARTS */
-
-function createHeart() {
-
-    const heart =
-        document.createElement("div");
-
-    heart.className = "heart";
-
-    heart.innerHTML =
-        ["❤️","💕","💗","♡","💖"][
-            Math.floor(Math.random() * 5)
-        ];
-
-    heart.style.left =
-        Math.random() * 100 + "vw";
-
-    heart.style.animationDuration =
-        (4 + Math.random() * 5) + "s";
-
-    heart.style.fontSize =
-        (14 + Math.random() * 20) + "px";
-
-    document.body.appendChild(heart);
-
-    setTimeout(() => {
-        heart.remove();
-    }, 9000);
-
-}
-
-function createHearts(amount) {
-
-    for (let i = 0; i < amount; i++) {
-
-        setTimeout(
-            createHeart,
-            i * 100
-        );
+        document.getElementById("days").textContent =
+            days;
 
     }
 
-}
+    updateCountdown();
 
-setInterval(createHeart, 900);
+    setInterval(updateCountdown, 60000);
 
 
-/* CLICK ANYWHERE FOR HEART */
+    /* SPECIAL MESSAGE */
 
-document.addEventListener("click", function(e) {
+    function openSurprise() {
 
-    if (
-        e.target.tagName !== "BUTTON" &&
-        e.target.tagName !== "A"
-    ) {
+        document.getElementById("popup").style.display =
+            "flex";
+
+        createHearts(25);
+    }
+
+    function closeSurprise() {
+
+        document.getElementById("popup").style.display =
+            "none";
+
+    }
+
+
+    /* FLOATING HEARTS */
+
+    function createHeart() {
 
         const heart =
             document.createElement("div");
 
         heart.className = "heart";
 
-        heart.innerHTML = "❤️";
+        heart.innerHTML =
+            ["❤️","💕","💗","♡","💖"][
+                Math.floor(Math.random() * 5)
+            ];
 
         heart.style.left =
-            e.clientX + "px";
+            Math.random() * 100 + "vw";
 
-        heart.style.bottom =
-            (window.innerHeight - e.clientY) + "px";
+        heart.style.animationDuration =
+            (4 + Math.random() * 5) + "s";
 
-        heart.style.animationDuration = "3s";
+        heart.style.fontSize =
+            (14 + Math.random() * 20) + "px";
 
         document.body.appendChild(heart);
 
         setTimeout(() => {
             heart.remove();
-        }, 3000);
+        }, 9000);
 
     }
 
-});
+    function createHearts(amount) {
 
-</script>
+        for (let i = 0; i < amount; i++) {
 
-</body>
-</html>
+            setTimeout(
+                createHeart,
+                i * 100
+            );
+
+        }
+
+    }
+
+    setInterval(createHeart, 900);
+
+
+    /* CLICK ANYWHERE FOR HEART */
+
+    document.addEventListener("click", function(e) {
+
+        if (
+            e.target.tagName !== "BUTTON" &&
+            e.target.tagName !== "A"
+        ) {
+
+            const heart =
+                document.createElement("div");
+
+            heart.className = "heart";
+
+            heart.innerHTML = "❤️";
+
+            heart.style.left =
+                e.clientX + "px";
+
+            heart.style.bottom =
+                (window.innerHeight - e.clientY) + "px";
+
+            heart.style.animationDuration = "3s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 3000);
+
+        }
+
+    });
+
+    </script>
+
+    </body>
+    </html>
